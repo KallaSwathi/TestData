@@ -111,11 +111,124 @@ public class WebElementFactory {
 	@FindBy(id="body_x_txtDeliveryDate_x_txtDeliveryDate_img_calendar") 
 	private WebElement requestedDeliveryDateBtn;
 	
+	//
+	@FindBy(id="body_x_txtSocialReason_x_x") 
+	private WebElement CorporateName;
+	public WebElement getCorporateName()
+	{
+		return CorporateName;
+	}
+	
+	@FindBy(id="body_x_txtLastname_x_x") 
+	private WebElement LastName;
+	
+	public WebElement getLastName(){
+		return LastName;
+	}
+	
+	@FindBy(id="body_x_txtFirstname_x_x") 
+	private WebElement FirstName;
+	public WebElement  getFirstName()
+	{
+		return FirstName;
+	}
+	
+	@FindBy(id="body_x_txtEmail_x_x") 
+	private WebElement Email;
+	public WebElement  getEmail() {
+	
+		return Email;
+	}
+	
+	@FindBy(id="body_x_txtPass_x_x") 
+	private WebElement Password;
+	
+	public WebElement  getPassword() {
+		return Password;
+	}
+	
+	@FindBy(id="body_x_txtPassConfirm_x_x") 
+	private WebElement ConfirmPassword;
+	
+	public WebElement  getConfirmPassword() {
+	
+		return ConfirmPassword;
+	}
+	
+	@FindBy(id="body_x_txtPhoneNumber_x_x") 
+	private WebElement PhoneNumber;
+	
+	public WebElement  getPhoneNumber() {
+	
+		return PhoneNumber;
+	}
+	@FindBy(id="body_x_proxyAdrOff_x_txtVoie_x_x") 
+	private WebElement Address;
+	
+	public WebElement  getAddress() {
+	
+		return Address;
+	}
+	
+	@FindBy(id="body_x_proxyAdrOff_x_txtCity_x_x") 
+	private WebElement City;
+	
+	public WebElement getCity () {
+	
+		return City;
+	}
+	
+	@FindBy(id="ddlbody_x_proxyAdrOff_x_ddlState_x") 
+	private WebElement State;
+	
+	public WebElement getState() {
+		return State;
+	}
+	
+	@FindBy(id="body_x_proxyAdrOff_x_txtZip_x_x") 
+	private WebElement ZipCode;
+	
+	public WebElement getZipCode() {
+		return ZipCode;
+	}
+	
+	@FindBy(id="ddlbody_x_proxyAdrOff_x_ddlPays_x") 
+	private WebElement Country;
+	
+	public WebElement getCountry() {
+		return Country;
+	}
+	
+	@FindBy(id="body_x_txtFunction_x_txtFunctionen") 
+	private WebElement Title;
+	
+	public WebElement getTitle() {
+		return Title;
+	}
+	
+	@FindBy(id="ddlbody_x_ddlLegalForm_x") 
+	private WebElement SupplierType;
+	
+	public WebElement getSupplierType() {
+		return SupplierType;
+	}
+	
+		
+	
+	
+	@FindBy(id="body_x_txtTva_x_x") 
+	private WebElement Federal;
+	
+	public WebElement getFederal(){
+		return Federal ;
+	}
+	
 	@FindBy(xpath="//input[@value='T']") 
 	private WebElement datePickerTodayBtn;
 	
 	@FindBy(xpath="//input[@value='+1']") 
-	private WebElement datePickerOneDayBtn;
+	private WebElement datePickerOneDayBt;
+	
 	
 	@FindBy(xpath="//input[@value='+7']") 
 	private WebElement datePickerSevenDayBtn;
@@ -179,7 +292,11 @@ public class WebElementFactory {
 	
 	@FindBy(xpath="//div[@role='menuitem']/div") 
 	private WebElement costCentreList;
-	
+	@FindBy(xpath="//*[@id='body_x_prxCustom_x_phcHelpdesk']/tbody/tr[2]/td/table/tbody/tr/td[1]")
+		private WebElement NewSupplier;
+	public WebElement getNewSupplier() {
+		return NewSupplier;
+	}
 	@FindBy(xpath="//*[@value='Save & close']") 
 	private WebElement saveandCloseButton;
 	
@@ -1252,7 +1369,11 @@ public class WebElementFactory {
 	public void setDatePickerTodayBtn(WebElement datePickerTodayBtn) {
 		this.datePickerTodayBtn = datePickerTodayBtn;
 	}
+	
 
+	@FindBy(xpath="//input[@value='+1']") 
+	private WebElement datePickerOneDayBtn;
+	
 	public WebElement getDatePickerOneDayBtn() {
 		return datePickerOneDayBtn;
 	}

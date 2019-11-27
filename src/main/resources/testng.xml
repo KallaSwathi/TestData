@@ -7,11 +7,11 @@
 	</listeners>
 	<test name="Test1" allow-return-values="true">
 		<classes>
-			<class name="com.techouts.fanniemae.testcases.CreateRequisitionsTest"/>
-		<!-- 	<class name="com.techouts.fanniemae.testcases.CreateContractMasterServicesAgreement"/>		
-			<class name="com.techouts.fanniemae.testcases.CorporateSupplierCreationTest"/> 
-			<class name="com.techouts.fanniemae.testcases.RealEstateBrokerSupplierCreationTest"/> -->
-			
+		<!--	<class name="com.techouts.fanniemae.testcases.CreateRequisitionsTest"/> -->
+		<!-- 	<class name="com.techouts.fanniemae.testcases.CreateContractMasterServicesAgreement"/>-->	
+		<!--	<class name="com.techouts.fanniemae.testcases.CorporateSupplierCreationTest"/> -->
+		 <!--<class name="com.techouts.fanniemae.testcases.RealEstateBrokerSupplierCreationTest"/> -->
+			<class name="com.techouts.fanniemae.testcases.NewSupplierReg"/>
 		</classes>
 	</test>
 </suite>
